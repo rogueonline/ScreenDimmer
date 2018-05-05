@@ -31,6 +31,8 @@ libgtk-3-dev
   * download src and run g++ commands below (NOTE: backtick **not** single quote)\
 ``` g++ -lGL -std=c++17 -c *.cpp `pkg-config --cflags --libs gtk+-3.0` ```\
 ``` g++ -lGL -std=c++17 *.o `pkg-config --cflags --libs gtk+-3.0` -o screendimmer` ```
+  * `screendimmer` can be placed in any directory\
+`.screendimmerrc` must be in home directory
 
 **Configuration**
 * `.screendimmerrc` (must be in home directory)
