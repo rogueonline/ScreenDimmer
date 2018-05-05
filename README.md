@@ -9,16 +9,16 @@ Features:
 * multi-monitor setups can choose which monitors to apply overlay with independent color and opacity for each
 
 red with .25 opacity\
-![Screen Dimmer Screenshot](screenshot/screendimmer-screenshot-01.png?raw=true "Red")\
+![Screen Dimmer Screenshot](screenshot/screendimmer-screenshot-01.png?raw=true "Red")
 
 green with .25 opacity\
-![Screen Dimmer Screenshot](screenshot/screendimmer-screenshot-02.png?raw=true "Green")\
+![Screen Dimmer Screenshot](screenshot/screendimmer-screenshot-02.png?raw=true "Green")
 
 blue with .25 opacity\
-![Screen Dimmer Screenshot](screenshot/screendimmer-screenshot-03.png?raw=true "Blue")\
+![Screen Dimmer Screenshot](screenshot/screendimmer-screenshot-03.png?raw=true "Blue")
 
 black with .5 opacity\
-![Screen Dimmer Screenshot](screenshot/screendimmer-screenshot-04.png?raw=true "Black")\
+![Screen Dimmer Screenshot](screenshot/screendimmer-screenshot-04.png?raw=true "Black")
 
 **Installation Options (neither option requires install)**
 * Binary
