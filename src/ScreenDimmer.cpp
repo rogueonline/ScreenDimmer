@@ -19,6 +19,15 @@ void ScreenDimmer::activate(GtkApplication* application, gpointer pointer) {
 		std::string index = std::to_string(i + 1);
 		int width = stoi(properties.get("monitor." + index + ".width"));
 		int height = stoi(properties.get("monitor." + index + ".height"));
+		double opacity = stod(properties.get("monitor." + index + ".opacity"));
+
+		// Skip if opacity set to 0
+		if (opacity == 0) {
+			// Set xy for next monitor
+			x += width;
+			y = 0;
+			continue;
+		}
 
 		// Create window
 		GtkWidget* window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
@@ -52,7 +61,7 @@ void ScreenDimmer::activate(GtkApplication* application, gpointer pointer) {
 		// Show window
 		gtk_widget_show_all(window);
 //		gtk_widget_show(window);
-		gtk_widget_set_opacity(GTK_WIDGET(window), stod(properties.get("monitor." + index + ".opacity")));
+		gtk_widget_set_opacity(GTK_WIDGET(window), opacity);
 
 		// GDK setting for click through
 		GdkWindow* gdkWindow = gtk_widget_get_window(GTK_WIDGET(window));
