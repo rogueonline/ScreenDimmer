@@ -14,7 +14,7 @@ void ScreenDimmer::activate(GtkApplication* application, gpointer pointer) {
 
 	int x = 0;
 	int y = 0;
-	int monitorCount = stoi(properties.get("monitor.count", "1"));
+	int monitorCount = stoi(properties.get("monitor.count", "1")); // Default 1
 	for (int i = 0; i < monitorCount; i++) {
 		std::string index = std::to_string(i + 1);
 		int width = stoi(properties.get("monitor." + index + ".width", "1920")); // Default 1920

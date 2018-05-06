@@ -41,16 +41,24 @@ libgtk-3-dev
   * `monitor.count` number of monitors (NOTE: '1' below is the monitor number)
   * `monitor.1.width` width of monitor resolution
   * `monitor.1.height` height of monitor resolution
-  * `monitor.1.color` color as hex value\
-#000000 = black\
-#FF0000 = red\
-#00FF00 = green\
-#0000FF = blue\
-#FFFFFF = white
+  * `monitor.1.color` any hex color value\
+example:
+    * #000000 = black
+    * #FF0000 = red
+    * #00FF00 = green
+    * #0000FF = blue
+    * #FFFFFF = white
   * `monitor.1.opacity` opacity between 0-1\
-0 = off\
-.5 = 1/2 transparent\
-1 = completely solid
+example:
+    * 0 = off
+    * .5 = 1/2 transparent
+    * 1 = completely solid
+* default settings will be used if `.screendimmerrc` is not used
+  * monitor.count = 1
+  * monitor.1.width = 1920
+  * monitor.1.height = 1080
+  * monitor.1.color = #000000
+  * monitor.1.opacity = .5
 
 **Run Screen Dimmer**
 * `./screendimmer`
