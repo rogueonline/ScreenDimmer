@@ -1,16 +1,16 @@
-monitor.count = 3
-
-monitor.1.width = 2560
-monitor.1.height = 1080
-monitor.1.color = #000000
-monitor.1.opacity = .5
-
-monitor.2.width = 2560
-monitor.2.height = 1080
-monitor.2.color = #000000
-monitor.2.opacity = .5
-
-monitor.3.width = 2560
-monitor.3.height = 1080
-monitor.3.color = #000000
-monitor.3.opacity = .5
+#monitor.count = 3
+#
+#monitor.1.width = 2560
+#monitor.1.height = 1080
+#monitor.1.color = #000000
+#monitor.1.opacity = .5
+#
+#monitor.2.width = 2560
+#monitor.2.height = 1080
+#monitor.2.color = #000000
+#monitor.2.opacity = .5
+#
+#monitor.3.width = 2560
+#monitor.3.height = 1080
+#monitor.3.color = #000000
+#monitor.3.opacity = .5
