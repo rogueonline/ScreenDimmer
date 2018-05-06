@@ -14,12 +14,12 @@ void ScreenDimmer::activate(GtkApplication* application, gpointer pointer) {
 
 	int x = 0;
 	int y = 0;
-	int monitorCount = stoi(properties.get("monitor.count"));
+	int monitorCount = stoi(properties.get("monitor.count", "1"));
 	for (int i = 0; i < monitorCount; i++) {
 		std::string index = std::to_string(i + 1);
-		int width = stoi(properties.get("monitor." + index + ".width"));
-		int height = stoi(properties.get("monitor." + index + ".height"));
-		double opacity = stod(properties.get("monitor." + index + ".opacity"));
+		int width = stoi(properties.get("monitor." + index + ".width", "1920")); // Default 1920
+		int height = stoi(properties.get("monitor." + index + ".height", "1080")); // Default 1080
+		double opacity = stod(properties.get("monitor." + index + ".opacity", ".5")); // Default .5
 
 		// Skip if opacity set to 0
 		if (opacity == 0) {
@@ -35,7 +35,7 @@ void ScreenDimmer::activate(GtkApplication* application, gpointer pointer) {
 		gtk_widget_set_name(window, ("_" + index).c_str()); // ID for css
 		gtk_window_set_title(GTK_WINDOW(window), "Screen Dimmer");
 		gtk_window_set_default_size(GTK_WINDOW(window), width, height); // Window size
-//		gtk_window_set_keep_above(GTK_WINDOW(window), true);
+		gtk_window_set_keep_above(GTK_WINDOW(window), true); // Keep window on top
 //		gtk_window_maximize(GTK_WINDOW(window)); // Maximize removes title bar
 		gtk_window_move(GTK_WINDOW(window), x, y); // Window xy location
 
@@ -53,7 +53,7 @@ void ScreenDimmer::activate(GtkApplication* application, gpointer pointer) {
 		gtk_style_context_add_provider_for_screen(screen, GTK_STYLE_PROVIDER(cssProvider), GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
 
 		// Create Css for window
-		std::string cssWindow = "#_" + index + " { background-color: " + properties.get("monitor." + index + ".color") + "; }";
+		std::string cssWindow = "#_" + index + " { background-color: " + properties.get("monitor." + index + ".color", "#000000") + "; }"; // Default #000000
 		const char* css = cssWindow.c_str();
 		gtk_css_provider_load_from_data(cssProvider, css, strlen(css), NULL);
 		g_object_unref(cssProvider);

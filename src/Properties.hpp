@@ -9,6 +9,7 @@ class Properties {
 	public:
 		Properties(std::string path);
 		std::string get(std::string property);
+		std::string get(std::string property, std::string defaultProperty);
 	private:
 		std::map<std::string, std::string> property;
 };

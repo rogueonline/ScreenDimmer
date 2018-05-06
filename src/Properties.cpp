@@ -50,11 +50,20 @@ Properties::Properties(std::string path) {
 			properties[key] = value;
 		}
 		catch (std::out_of_range &oor) {
-			std::cout << "Error line " << i << ": " << line << std::endl  << oor.what() << line << std::endl;
+			std::cout << "Error line " << i << ": " << line << std::endl << oor.what() << line << std::endl;
 		}
 	}
 }
 
 std::string Properties::get(std::string property) {
 	return properties.at(property);
+}
+
+std::string Properties::get(std::string property, std::string defaultProperty) {
+	try {
+		return properties.at(property);
+	}
+	catch (std::out_of_range &oor) {
+		return defaultProperty;
+	}
 }
