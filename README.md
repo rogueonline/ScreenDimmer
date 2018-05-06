@@ -20,6 +20,8 @@ blue with .25 opacity\
 black with .5 opacity\
 ![Screen Dimmer Screenshot](screenshot/screendimmer-screenshot-04.png?raw=true "Black")
 
+---
+
 **Installation Options (neither option requires install)**
 * Binary
   * download bin\
