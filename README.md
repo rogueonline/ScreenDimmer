@@ -61,7 +61,7 @@ example:
   * monitor.1.opacity = .5
 
 **Run Screen Dimmer**
-* `./screendimmer start`
+* `./screendimmer start &`
 
 **Stop Screen Dimmer**
 * `./screendimmer stop`
