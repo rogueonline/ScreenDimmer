@@ -37,7 +37,7 @@ libgtk-3-dev
 `.screendimmerrc` must be in home directory
 
 **Configuration**
-* `.screendimmerrc` (must be in home directory)
+* `.screendimmerrc`
   * `monitor.count` number of monitors (NOTE: '1' below is the monitor number)
   * `monitor.1.width` width of monitor resolution
   * `monitor.1.height` height of monitor resolution
