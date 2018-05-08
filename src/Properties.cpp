@@ -55,10 +55,21 @@ Properties::Properties(std::string path) {
 	}
 }
 
+/**
+ * @std::string property to retrieve
+ *
+ * @return parameter
+ */
 std::string Properties::get(std::string property) {
 	return properties.at(property);
 }
 
+/**
+ * @param std::string property to retrieve
+ * @param std::string defaultProperty parameter to return if not found
+ *
+ * @return parameter or defaultProperty if not found
+ */
 std::string Properties::get(std::string property, std::string defaultProperty) {
 	try {
 		return properties.at(property);
