@@ -10,7 +10,7 @@ int main(int argc, char** argv) {
 		code = screenDimmer.run(1, argv);
 	}
 	else if (command.compare("stop") == 0) {
-		std::system("killall 'screendimmer'");
+		std::system("killall 'screendimmer' &");
 	}
 	else {
 		std::cout <<  "Missing argument 'start' or 'stop'"<< std::endl;

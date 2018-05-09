@@ -68,7 +68,7 @@ std::string Properties::get(std::string property) {
  * @param std::string property to retrieve
  * @param std::string value to return if property not found
  *
- * @return value or defaultProperty if not found
+ * @return value or default value
  */
 std::string Properties::get(std::string property, std::string value) {
 	try {

@@ -60,8 +60,14 @@ example:
   * monitor.1.color = #000000
   * monitor.1.opacity = .5
 
-**Run Screen Dimmer**
-* `./screendimmer start &`
+**Run Options**
+  * Foreground
+    * `./screendimmer start`
+  * Bacground
+    * `./screendimmer start &`
+  * Disown
+    * `./screendimmer start &`\
+`disown`
 
-**Stop Screen Dimmer**
+**Stop**
 * `./screendimmer stop`
