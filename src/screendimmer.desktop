@@ -1,0 +1,8 @@
+# Place in /usr/share/applications/ or ~/.local/share/applications/
+
+[Desktop Entry]
+Name=Screen Dimmer
+Exec= /opt/screendimmer/screendimmer.sh
+Type=Application
+Terminal=false
+#Icon= /opt/screendimmer/

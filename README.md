@@ -68,6 +68,15 @@ example:
   * Disown
     * `./screendimmer start &`\
 `disown`
+  * Add to Launcher Favorites\
+click to start\
+click again to stop
+    * move `.screendimmerrc` to home directory
+    * create `/opt/screendimmer` directory
+    * move `screendimmer` to `/opt/screendimmer/`
+    * move `screendimmer.sh` to `/opt/screendimmer/`
+    * move `screendimmer.desktop` to either `~/.local/share/applications/` or `/usr/share/applications/`
+    * open launcher and add to favorites
 
 **Stop**
 * `./screendimmer stop`
