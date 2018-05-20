@@ -1,12 +1,13 @@
 # Screen Dimmer v1
-Screen Dimmer adds translucent overlay over screen to reduce eye strain without turning your screen orange like other color shifting programs.
-Unlike similar programs, Screen Dimmer allows you to choose the color, opacity, and when you want to use it.
+Screen Dimmer adds translucent overlay over screen to reduce eye strain.
+Unlike other color shifting programs, Screen Dimmer allows you to choose the color, opacity and when you want it on or off.
 
 Features:
-* **not** on a timer so you can turn it on or off when you want
-* you get to choose your preferred color (nothing looks orange, unless you want it to be)
-* once started the overlay doesn't change over time (depending on the time of day, sun, moon, planetary positions)
-* multi-monitor setups can choose which monitors to apply overlay with independent color and opacity for each
+* choose your preferred color (nothing looks orange, unless you want it to be)
+* choose your preferred opacity
+* no timers so you can turn it on or off when you want
+* once started the overlay doesn't change over time (depending on the time of day, sun, moon or planetary alignment)
+* multi-monitor systems can choose which monitors to dim with independent color and opacity for each
 
 red with .25 opacity\
 ![Screen Dimmer Screenshot](screenshot/screendimmer-screenshot-01.png?raw=true "Red")
